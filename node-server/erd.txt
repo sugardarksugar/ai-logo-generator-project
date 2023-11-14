@@ -1,0 +1,57 @@
+user
+-
+id pk
+username varchar(255)
+password_hash char(60)
+created_at timestamps
+
+user_preference
+-
+id pk
+user_id fk
+preference_id fk
+created_at timestamps
+
+
+preference
+-
+id pk
+name varchar(255)
+created_at timestamps
+
+
+
+ai_picture
+-
+id pk
+file_name varchar(255)
+preference_id fk
+created_at timestamps
+
+
+google_picture
+-
+id pk
+file_name varchar(255)
+preference_id fk
+created_at timestamps
+
+
+save
+-
+user_id fk
+ai_picture_id fk
+created_at timestamps
+
+
+trend_data
+-
+id pk
+time varchar(30)
+formatted_time varchar(30)
+formatted_axis_time varchar(30)
+value integer
+hasData boolean
+formatted_value varchar(20)
+created_at timestamps
+keywords varchar(255)

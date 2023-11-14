@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo img{
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.username {
+    font-size: 2rem;
+}
+
+.logoutBtn {
+    margin: 1rem;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    color: #084eb2;
+    background-color: #dddde5;
+}
+
+.logoutBtn:hover {
+    background-color: #cdcdd7;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+label {
+    padding: 0;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+span {
+    display: inline-block;
+    background-color: #aaa;
+    padding: 3px 6px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: #444;
+    user-select: none;
+    /* 防止文字被滑鼠選取反白 */
+    font-size: 3rem;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+input[type=checkbox]+span:hover{
+    transform: scale(1.1);
+}
+
+input[type=checkbox]:checked+span {
+    color: yellow;
+    background-color: #444;
+}
+
+.submitBtn {
+    text-align: center;
+}
+
+.submitBtn button {
+    border-radius: 6px;
+    font-size: 1.3rem;
+    color: #084eb2;
+    background-color: #dddde5;
+    margin: 10px;
+}
+
+.submitBtn button:hover{
+    background-color: #cdcdd7;
+}

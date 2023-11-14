@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+
+  <div class="form-container">
+
+    <!------------------Login Form------------------------>
+    <form class="form login-form" id="login">
+      <h1>Login</h1>
+      <label>Username</label>
+      <input type="username" name="username" required />
+      <label>Password</label>
+      <input type="password" name="password" required />
+      <button type="submit" class="submit-btn">Login</button>
+      <a href="#" class="links-to-register">Register here</a>
+    </form>
+
+    <!------------------Register Form------------------------>
+    <form class="form register-form" id="register">
+      <h1>Register</h1>
+      <label>Username</label>
+      <input type="username" name="username" />
+      <label>Password</label>
+      <input type="password" name="password" />
+      <!-- <label>Birthday</label>
+        <input type="date" name="date_of_birth" />
+        <label>Phone number</label>
+        <input type="phone-number" name="phone_number" />
+        <label>Email</label>
+        <input type="email" name="email" /> -->
+      <button type="submit" class="submit-btn">Register</button>
+      <a href="#" class="links-to-login">Already have an account Login here</a>
+    </form>
+    
+  </div>
+
+  <!--------------------Sweet Alert----------------------------------->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="login.js"></script>
+</body>
+
+</html>
